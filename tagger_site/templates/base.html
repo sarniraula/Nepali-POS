@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nepali POS Tagger</title>
+
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'pos_tagger/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/header-basic-light.css' %}" />
+	{% block style %}
+	{% endblock %}
+</head>
+
+
+<body>
+
+  <header class="header-basic-light">
+  	<div class="header-limiter">
+
+  		<h1><a href="/">POS <span>Tagger</span></a></h1>
+
+  		<nav>
+        <!-- class="selected" for selected tab -->
+  			<a href="/">Home</a>
+  			<a href="/tagger">Tagger</a>
+  			<a href="#">Blog</a>
+  			<a href="#">About</a>
+  			<a href="#">Faq</a>
+  			<a href="#">Contact</a>
+  		</nav>
+  	</div>
+
+  </header>
+
+{% block content %}
+{% endblock %}
+</body>
+</html>

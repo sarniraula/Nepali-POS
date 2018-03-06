@@ -1,0 +1,18 @@
+.output {
+}
+.output_table {
+    padding: 0px;
+    background: #EEEEEE;
+}
+
+.output_table th {
+    padding: 5px;
+    align: center;
+    color: #FFFFFF;
+    background-color: #204A87;
+}
+
+.output_table td {
+    padding-left: 5px;
+    padding-right: 5px;
+}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-content">
+  <h1> Nepali POS Tagger </h1>
+{% if error_message %}
+<p style="text-align: center"> {{ error_message }}</p>
+{% endif %}
+<form action="{% url 'tagger:output' %}" method="post">
+{% csrf_token %}
+    <textarea name="input_text" class="textbox" placeholder="इन्पुट दिनुहोस्"></textarea>
+    <br/>
+    <input type="submit" class="submit" value="Tag Text" />
+</form>
+</div>
+{% endblock %}
